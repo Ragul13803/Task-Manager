@@ -5,11 +5,11 @@ import { addTaskRequest } from '../redux/taskSlice';
 
 const TaskForm = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const dispatch = useDispatch(); 
+  const dispatch = useDispatch();  
   const loading = useSelector(state => state.tasks.loading);
 
   const onSubmit = (data) => {
-    dispatch(addTaskRequest(data));
+    dispatch(addTaskRequest(data)); 
   };
 
   return (
