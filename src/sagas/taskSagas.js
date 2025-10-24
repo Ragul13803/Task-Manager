@@ -1,6 +1,6 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
 import axios from 'axios';
-import { fetchTasksRequest, fetchTasksSuccess, fetchTasksFailure, addTaskRequest, addTaskSuccess, addTaskFailure } from '../redux/taskSlice';
+import { fetchTasksSuccess, fetchTasksFailure, addTaskSuccess, addTaskFailure } from '../redux/taskSlice';
 
 const API_URL = 'https://jsonplaceholder.typicode.com/todos'; // Replace with your real API URL
 
